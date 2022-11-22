@@ -10,17 +10,6 @@ import { DirectionsCar } from '@mui/icons-material';
 const pages = ['Members', 'Join', 'Donate'];
 
 function ResponsiveAppBar() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
-
   return (
     <AppBar position="static" sx={{ bgcolor: "black" }}>
       <Container maxWidth="xl">
@@ -50,7 +39,7 @@ function ResponsiveAppBar() {
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
+                // onClick={handleCloseNavMenu} TODO make handlePageClick
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 {page}
