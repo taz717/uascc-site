@@ -5,7 +5,12 @@ import Typography from '@mui/material/Typography';
 
 function Funding() {
     return (
-        <Box>Funding</Box>
+        <Box sx={{
+            width: '100%',
+            height: '100vh',
+        }}>
+            <Typography variant='h3'>Funding</Typography>
+        </Box>
     );
 }
 

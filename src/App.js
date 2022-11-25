@@ -1,19 +1,28 @@
 import './App.css';
-import Navbar from './components/Navbar.js';
-import Funding from './components/frontPage/Funding'
-import Mission from './components/frontPage/Mission'
-import Progress from './components/frontPage/Progress'
-import Values from './components/frontPage/Values'
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from "react-router-dom";
+
+import NavBar from './components/Navbar'
+import MembersPage from './containers/membersPage/MembersPage';
+import JoinPage from './containers/joinPage/JoinPage'
+import HomePage from './containers/homePage/HomePage';
 
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Funding />
-      <Mission />
-      <Progress />
-      <Values />
+      <NavBar />
+
+      <Router>
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path="/members" element={<MembersPage />} />
+          <Route path="/join" element={<JoinPage />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
