@@ -2,8 +2,13 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Fab from '@mui/material/Fab';
-import Grid from '@mui/material/Grid';
-import { useState } from 'react';
+import Popover from '@mui/material/Popover';
+
+// how to use:      
+// call component with an array containing:
+//   the title of the progress circle in location 0
+//   the info of the progress circle in location  1
+
 
 const myStyle = {
     minHeight: '150px',
@@ -11,25 +16,41 @@ const myStyle = {
     m: '20px',
 }
 
-const milestones = ['Milestone 1', 'Milestone 2', 'Milestone 3', 'Milestone 4']
-const infoDict = { 'Milestone 1': 'This is the first milestone', 'Milestone 2': 'This is the second milestone', 'Milestone 3': 'This is the third milestone', 'Milestone 4': 'This is the fourth milestone' }
-
-function ProgressCircle() {
-    const [active, setActive] = useState(milestones[0]);
+function ProgressCircle({ milestone }) {
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const handlePopoverOpen = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+    const handlePopoverClose = () => {
+        setAnchorEl(null);
+    };
+    const open = Boolean(anchorEl);
 
     return (
         <Box>
-            <Grid container
-                direction="row"
-                justifyContent="center"
-                alignItems="center">
-                {milestones.map((milestone) => (
-                    <Fab key={milestone} sx={myStyle} onClick={() => setActive(milestone)}>
-                        <Typography>{milestone}</Typography>
-                    </Fab>))}
-            </Grid>
-
-            <Typography sx={{ mt: '10px' }}>{infoDict[active]}</Typography>
+            <Fab sx={myStyle} onMouseEnter={handlePopoverOpen} onMouseLeave={handlePopoverClose}>
+                <Typography>{milestone[0]}</Typography>
+                <Popover
+                    sx={{
+                        pointerEvents: 'none',
+                        margin: '25px'
+                    }}
+                    open={open}
+                    anchorEl={anchorEl}
+                    anchorOrigin={{
+                        vertical: 'bottom',
+                        horizontal: 'left',
+                    }}
+                    transformOrigin={{
+                        vertical: 'top',
+                        horizontal: 'left',
+                    }}
+                    onClose={handlePopoverClose}
+                    disableRestoreFocus
+                >
+                    <Typography sx={{ p: 1 }}>{milestone[1]}</Typography>
+                </Popover>
+            </Fab>
         </Box>
     );
 }
