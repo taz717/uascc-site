@@ -9,6 +9,7 @@ import NavBar from './components/Navbar'
 import MembersPage from './containers/membersPage/MembersPage';
 import JoinPage from './containers/joinPage/JoinPage'
 import HomePage from './containers/homePage/HomePage';
+import DonatePage from './containers/donatePage/DonatePage';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path='/' element={<HomePage />} />
           <Route path="/members" element={<MembersPage />} />
           <Route path="/join" element={<JoinPage />} />
+          <Route path='/donate' element={<DonatePage />} />
         </Routes>
       </Router>
     </div>
