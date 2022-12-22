@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import ProgressCircle from './ProgressCircle';
 import Grid from '@mui/material/Grid';
@@ -22,11 +21,10 @@ const infoDict = {
 
 function Progress() {
     return (
-        <Box sx={{
+        <Paper elevation={3} sx={{
             width: '100%',
             height: '100vh',
         }}>
-            {/* <Paper sx={{ background: 'black' }}> */}
             <Typography variant='h3'>Progress</Typography>
             <Grid container
                 direction="row"
@@ -36,7 +34,7 @@ function Progress() {
                     return <ProgressCircle key={index} milestone={infoDict[key]} />
                 })}
             </Grid>
-        </Box>
+        </Paper >
     );
 }
 

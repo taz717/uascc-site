@@ -33,7 +33,7 @@ function ProgressCircle({ milestone }) {
                 <Popover
                     sx={{
                         pointerEvents: 'none',
-                        margin: '25px'
+                        margin: '5px'
                     }}
                     open={open}
                     anchorEl={anchorEl}

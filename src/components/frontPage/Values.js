@@ -1,17 +1,21 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import Paper from '@mui/material/Paper';
 
+// placeholder for now
+// probably delete later (same as mission)
 
 function Values() {
     return (
-        <Box sx={{
+        <Paper sx={{
             width: '100%',
             height: '100vh',
-        }} bgcolor="black">
+            background: 'black',
+        }}>
             <Typography sx={{ color: "white" }} variant='h3'>Values</Typography>
-        </Box>
+        </Paper>
     );
 }
 
 export default Values;
+
