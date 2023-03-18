@@ -1,27 +1,28 @@
 import * as React from 'react';
-import Paper from '@mui/material/Paper';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
 
 function Member({ member }) {
-    console.log(member)
+
     return (
-        <div style={{
-            width: '100%',
-            height: '100vh - 64px'
-        }}>
-            <Paper elavation={3}>
-                <Grid direction="row"
-                    justifyContent="center"
-                    alignItems="center">
-                    <Typography variant='h3'>{member[0]}</Typography>
-                    <img style={{
-                        height: '100px',
-                        width: '100px',
-                    }} src={member[1]} />
-                </Grid>
-            </Paper>
-        </div>
+        <Card sx={{ maxWidth: 345, margin: '16px', marginLeft: '50px', marginRight: '50px' }}>
+            <CardMedia
+                component="img"
+                sx={{ height: 140, objectFit: 'contain' }}
+                image={member[1]}
+                title={member[0]}
+            />
+            <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                    {member[0]}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                    {member[2]}
+                </Typography>
+            </CardContent>
+        </Card>
     );
 }
 

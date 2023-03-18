@@ -11,7 +11,8 @@ function Funding() {
             width: '100%',
             height: '100vh',
         }}>
-            <Typography variant='h3'>Funding</Typography>
+            <Typography sx={{ marginBottom: "25px" }} variant='h3'>Funding</Typography>
+            <Typography variant='p'>Here is my paypal - @givememoney.com</Typography>
         </Box>
     );
 }

@@ -5,16 +5,19 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
+import Link from '@mui/material/Link';
 import { DirectionsCar } from '@mui/icons-material';
 
 const pages = ['Members', 'Join', 'Donate'];
 
 function ResponsiveAppBar() {
   return (
-    <AppBar position="static" sx={{ bgcolor: "black" }}>
+    <AppBar position="static" sx={{ bgcolor: "black", marginBottom: '25px' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <DirectionsCar sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <Link href="/" color="inherit">
+            <DirectionsCar sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          </Link>
           <Typography
             variant="h6"
             noWrap

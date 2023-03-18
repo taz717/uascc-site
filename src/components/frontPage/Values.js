@@ -12,7 +12,8 @@ function Values() {
             height: '100vh',
             background: 'black',
         }}>
-            <Typography sx={{ color: "white" }} variant='h3'>Values</Typography>
+            <Typography sx={{ color: "white", marginBottom: "25px" }} variant='h3'>Values</Typography>
+            <Typography sx={{ color: "white" }} variant='p'>decepticons bad, autobots good</Typography>
         </Paper>
     );
 }

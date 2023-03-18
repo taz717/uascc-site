@@ -9,14 +9,9 @@ function Mission() {
             width: '100%',
             height: '100vh'
         }}>
-            {/* <Box sx={{
-                width: '100%',
-                height: '100vh',
-            }}> */}
             <div>
                 <Typography sx={{ color: "white" }} variant='h3'>Mission</Typography>
-                <Typography sx={{ color: "white" }}>Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum</Typography>
-                {/* </Box> */}
+                <Typography sx={{ color: "white" }}>Our Mission is to destory the decepticons</Typography>
             </div>
         </div>
     );
