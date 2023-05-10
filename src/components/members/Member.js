@@ -5,12 +5,11 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 
 function Member({ member }) {
-
     return (
         <Card sx={{ maxWidth: 345, margin: '16px', marginLeft: '50px', marginRight: '50px' }}>
             <CardMedia
                 component="img"
-                sx={{ height: 140, objectFit: 'contain' }}
+                sx={{ height: 140, objectFit: 'contain', marginTop: '10px' }}
                 image={member[1]}
                 title={member[0]}
             />

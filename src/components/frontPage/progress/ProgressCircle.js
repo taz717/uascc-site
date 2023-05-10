@@ -16,7 +16,9 @@ const myStyle = {
     m: '20px',
 }
 
+// this is the progress circle component
 function ProgressCircle({ milestone }) {
+    // this is the popover code
     const [anchorEl, setAnchorEl] = React.useState(null);
     const handlePopoverOpen = (event) => {
         setAnchorEl(event.currentTarget);
