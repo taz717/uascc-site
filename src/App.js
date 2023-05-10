@@ -19,10 +19,10 @@ function App() {
 
       <Router>
         <Routes>
-          <Route path='/' element={<HomePage />} />
-          <Route path="/members" element={<MembersPage />} />
-          <Route path="/join" element={<JoinPage />} />
-          <Route path='/donate' element={<DonatePage />} />
+          <Route path='/uascc-site/' element={<HomePage />} />
+          <Route path="/uascc-site/members" element={<MembersPage />} />
+          <Route path="/uascc-site/join" element={<JoinPage />} />
+          <Route path='/uascc-site/donate' element={<DonatePage />} />
         </Routes>
       </Router>
     </div>
