@@ -1,7 +1,7 @@
 {
   "name": "uscc",
   "version": "0.1.0",
-  "homepage": "https://taz717.github.io/uascc-site",
+  "homepage": "https://taz717.github.io/uascc-site/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",

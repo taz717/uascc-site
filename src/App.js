@@ -16,13 +16,12 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-
       <Router>
         <Routes>
-          <Route path='/uascc-site/' element={<HomePage />} />
-          <Route path="/uascc-site/members" element={<MembersPage />} />
-          <Route path="/uascc-site/join" element={<JoinPage />} />
-          <Route path='/uascc-site/donate' element={<DonatePage />} />
+          <Route exact path=' /' element={<HomePage />} />
+          <Route path="/members" element={<MembersPage />} />
+          <Route path="/join" element={<JoinPage />} />
+          <Route path='/donate' element={<DonatePage />} />
         </Routes>
       </Router>
     </div>
