@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/uascc-site/static/css/main.728d7f41.css",
+    "main.js": "/uascc-site/static/js/main.13a78cc6.js",
+    "static/js/787.9317e4e9.chunk.js": "/uascc-site/static/js/787.9317e4e9.chunk.js",
+    "static/media/background.jpg": "/uascc-site/static/media/background.0498dd976baeb5079ec9.jpg",
+    "static/media/Bakbak.jpg": "/uascc-site/static/media/Bakbak.b18db91783b10b28076b.jpg",
+    "static/media/Dhiraj.jpg": "/uascc-site/static/media/Dhiraj.69c4be78a93f00c73aab.jpg",
+    "static/media/RJ.jpg": "/uascc-site/static/media/RJ.b123de08e3c3ae26216b.jpg",
+    "static/media/Optimus.jpg": "/uascc-site/static/media/Optimus.f7e13aae598103cb0c27.jpg",
+    "index.html": "/uascc-site/index.html",
+    "main.728d7f41.css.map": "/uascc-site/static/css/main.728d7f41.css.map",
+    "main.13a78cc6.js.map": "/uascc-site/static/js/main.13a78cc6.js.map",
+    "787.9317e4e9.chunk.js.map": "/uascc-site/static/js/787.9317e4e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.728d7f41.css",
+    "static/js/main.13a78cc6.js"
+  ]
+}
