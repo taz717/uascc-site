@@ -38,6 +38,7 @@ function MembersPage() {
                 spacing={2}
                 sx={{ flexWrap: 'wrap', justifyContent: 'center' }}
             >
+                {/* takes the information and creates a Memeber component for each item */}
                 {Object.keys(infoDict).map((key, index) => {
                     return <Member key={index} member={infoDict[key]} />
                 })}

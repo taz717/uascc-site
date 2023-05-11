@@ -2,14 +2,15 @@
     position: relative;
     color: black;
     /*Note, you can change the color to your choice depending on your 
-    image and what color blends with it*/
+    image and what color blends with it but I stg if anyone touches this
+    without telling me I'm going to throw a fit*/
 }
 
 .container::after {
     content: "";
     opacity: 0.8;
     filter: blur(8px);
-    background: rgb(26, 31, 41) url("./background.jpg") no-repeat fixed top;
+    background: rgb(26, 31, 41) url("./Temp.png") no-repeat fixed top;
     /* background-blend-mode: darken; */
     /* also change the blend mode to what suits you, from darken, to other 
     many options as you deem fit*/

@@ -42,7 +42,7 @@ function ResponsiveAppBar() {
             {pages.map((page) => (
               <Button
                 key={page}
-                href={"/" + page.toLowerCase()}
+                href={"#/" + page.toLowerCase()}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 {page}

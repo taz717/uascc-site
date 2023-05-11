@@ -1,10 +1,11 @@
 import './App.css';
 import {
-  BrowserRouter as Router,
   Route,
   Routes,
 } from "react-router-dom";
 
+// These are from the container folder ONLY
+// COMPONENTS GO INSIDE CONTAINERS THAT GO INSIDE HERE
 import NavBar from './components/Navbar'
 import MembersPage from './containers/membersPage/MembersPage';
 import JoinPage from './containers/joinPage/JoinPage'
@@ -16,14 +17,12 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Router>
-        <Routes>
-          <Route exact path=' /' element={<HomePage />} />
-          <Route path="/members" element={<MembersPage />} />
-          <Route path="/join" element={<JoinPage />} />
-          <Route path='/donate' element={<DonatePage />} />
-        </Routes>
-      </Router>
+      <Routes>
+        <Route exact path='/' element={<HomePage />} />
+        <Route exact path="/members/" element={<MembersPage />} />
+        <Route exact path="/join/" element={<JoinPage />} />
+        <Route exact path='/donate/' element={<DonatePage />} />
+      </Routes>
     </div>
   );
 }
