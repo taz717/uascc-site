@@ -1,6 +1,6 @@
 .container {
     position: relative;
-    color: black;
+    color: white;
     /*Note, you can change the color to your choice depending on your 
     image and what color blends with it but I stg if anyone touches this
     without telling me I'm going to throw a fit*/
@@ -11,7 +11,7 @@
     opacity: 0.8;
     filter: blur(8px);
     background: rgb(26, 31, 41) url("./Temp.png") no-repeat fixed top;
-    /* background-blend-mode: darken; */
+    background-blend-mode: hard-light;
     /* also change the blend mode to what suits you, from darken, to other 
     many options as you deem fit*/
     background-size: cover;

@@ -16,7 +16,7 @@ function JoinPage() {
         >
 
             <Grid item xs={3}>
-                <Card sx={{ maxWidth: 345, margin: '16px' }} justifyContent="center" alignItems="center">
+                <Card sx={{ maxWidth: 345, margin: '16px' }}>
                     <CardContent>
                         <Typography variant="h5" component="h2">
                             Join our club!
