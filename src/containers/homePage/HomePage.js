@@ -11,11 +11,14 @@ function HomePage() {
 
     return (
         <div className='container' style={{
+            marginTop: '5px',
             width: '100%',
-            height: '100vh'
+            height: '100vh',
+            position: 'fixed',
         }}>
             <Mission />
-            <Progress />
+            {/* Gone till we have content */}
+            {/* <Progress /> */}
         </div>
     );
 }

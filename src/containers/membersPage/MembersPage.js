@@ -3,7 +3,6 @@ import Grid from '@mui/material/Grid';
 
 import Member from '../../components/members/Member';
 
-import Bakbak from './styles/Bakbak.jpg'
 import RJ from './styles/RJ.jpg'
 import dhiraj from './styles/Dhiraj.jpg'
 import El from './styles/El.jpg'
@@ -33,7 +32,7 @@ const infoDict = {
         "In my free time I like to play tennis, rock climb and ski! I am excited to be the main contact for anything electrical/solar" +
         "power related as I have a passion for the solar industry."],
 
-    m5: ['Labiba', El, "Hi! My name is Labiba and I'm the marketing lead. During the semester, you can usually find" +
+    m5: ['Labiba Raisa', El, "Hi! My name is Labiba and I'm the marketing lead. During the semester, you can usually find" +
         "me studying away in SUB. In my free time, I like to work out, go for walks around Kinsmen park, and try new foods." +
         "I'm excited to see our solar car come to reality and share our progress with the world!"],
 
