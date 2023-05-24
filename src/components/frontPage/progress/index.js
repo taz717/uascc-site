@@ -14,7 +14,7 @@ const infoDict = {
 
 function Progress() {
     return (
-        <Box sx={{ height: '100vh', }}>
+        <Box sx={{ height: '80vh', }}>
             <Typography variant="h4" sx={{ marginBottom: '1rem', marginTop: '20px' }}>
                 Progress
             </Typography>
