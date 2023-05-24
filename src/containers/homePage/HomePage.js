@@ -1,23 +1,22 @@
-import * as React from 'react';
+import React from 'react';
 import Box from '@mui/material/Box';
 
-// import Funding from '../../components/frontPage/Funding'
-import Mission from '../../components/frontPage/mission/Mission'
-import Progress from '../../components/frontPage/progress/Progress'
-import Values from '../../components/frontPage/Values'
+import Mission from '../../components/frontPage/mission/Mission';
+import Progress from '../../components/frontPage/progress';
+import Values from '../../components/frontPage/Values';
 
-// removed scroll snap because I find it uncessary and more annoying than helpful
-// TODO swap funding component to a container
+import './styles/HomePage.css'
 
 function HomePage() {
 
     return (
-        <Box>
+        <div className='container' style={{
+            width: '100%',
+            height: '100vh'
+        }}>
             <Mission />
-            <Values />
             <Progress />
-            {/* <Funding /> */}
-        </Box>
+        </div>
     );
 }
 

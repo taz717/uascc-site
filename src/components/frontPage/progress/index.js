@@ -3,38 +3,31 @@ import Typography from '@mui/material/Typography';
 import ProgressCircle from './ProgressCircle';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
+import Box from '@mui/material/Box';
 
 const infoDict = {
     m1: ['Milestone 1', 'This is the first milestone'],
     m2: ['Milestone 2', 'This is the second milestone'],
     m3: ['Milestone 3', 'This is the third milestone'],
     m4: ['Milestone 4', 'This is the fourth milestone']
-}
-
-// TODO:
-// add paper for circles
-// swap boxes with paper for all 4 main components
-// scroll snap for members
-// add members
-// add donate + donate link
-// add join + join link
+};
 
 function Progress() {
     return (
-        <Paper elevation={3} sx={{
-            width: '100%',
-            height: '100vh',
-        }}>
-            <Typography variant='h3'>Progress</Typography>
-            <Grid container
-                direction="row"
-                justifyContent="center"
-                alignItems="center">
+        <Box sx={{ height: '100vh', }}>
+            <Typography variant="h4" sx={{ marginBottom: '1rem', marginTop: '20px' }}>
+                Progress
+            </Typography>
+            <Grid container spacing={2}>
                 {Object.keys(infoDict).map((key, index) => {
-                    return <ProgressCircle key={index} milestone={infoDict[key]} />
+                    return (
+                        <Grid item key={index} xs={12} sm={6} md={3}>
+                            <ProgressCircle milestone={infoDict[key]} />
+                        </Grid>
+                    );
                 })}
             </Grid>
-        </Paper >
+        </Box>
     );
 }
 

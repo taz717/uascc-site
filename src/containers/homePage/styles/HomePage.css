@@ -10,7 +10,7 @@
     content: "";
     opacity: 0.8;
     filter: blur(8px);
-    /* background: rgb(26, 31, 41) url("./Temp.png") no-repeat fixed top; */
+    background: rgb(26, 31, 41) url("./Temp.png") no-repeat fixed top;
     background-blend-mode: hard-light;
     /* also change the blend mode to what suits you, from darken, to other 
     many options as you deem fit*/
