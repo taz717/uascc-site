@@ -1,32 +1,25 @@
-import * as React from 'react';
-import { useRef } from "react";
+import React from 'react';
 import Box from '@mui/material/Box';
-import useScrollSnap from "react-use-scroll-snap";
 
-import Funding from '../../components/frontPage/Funding'
-import Mission from '../../components/frontPage/mission/Mission'
-import Progress from '../../components/frontPage/progress/Progress'
-import Values from '../../components/frontPage/Values'
+import Mission from '../../components/frontPage/mission/Mission';
+import Progress from '../../components/frontPage/progress';
+import Values from '../../components/frontPage/Values';
+
+import './styles/HomePage.css'
 
 function HomePage() {
-    const scrollRef = useRef(null);
-    useScrollSnap({ ref: scrollRef, duration: 50, delay: 50 });
 
     return (
-        <Box ref={scrollRef}>
-            <div >
-                <Mission />
-            </div>
-            <div>
-                <Progress />
-            </div>
-            <div>
-                <Values />
-            </div>
-            <div>
-                <Funding />
-            </div>
-        </Box>
+        <div className='container' style={{
+            marginTop: '5px',
+            width: '100%',
+            height: '100vh',
+            position: 'fixed',
+        }}>
+            <Mission />
+            {/* Gone till we have content */}
+            {/* <Progress /> */}
+        </div>
     );
 }
 
