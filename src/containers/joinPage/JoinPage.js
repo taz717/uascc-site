@@ -16,14 +16,9 @@ function JoinPage() {
         >
 
             <Grid item xs={3}>
-                <Card sx={{ maxWidth: 345, margin: '16px' }}>
+                <Card sx={{ margin: '16px' }}>
                     <CardContent>
-                        <Typography variant="h5" component="h2">
-                            Join our club!
-                        </Typography>
-                        <Typography variant="body2" component="p">
-                            We are excited to have you join our club. Please fill out the form to get started.
-                        </Typography>
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfNSCZPpI0ieE8p3tsccHMQLFG5HphU9oc8WZx4B3bzjD0FTg/viewform?embedded=true" scrolling='no' width="640" height="2244" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                     </CardContent>
                 </Card>
             </Grid>

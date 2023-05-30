@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 import { DirectionsCar } from '@mui/icons-material';
 
-const pages = ['Members', 'Join', 'Donate'];
+const pages = ['Members', 'Join'];
 // God I hate this
 
 function ResponsiveAppBar() {
