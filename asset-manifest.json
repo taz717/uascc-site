@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/uascc-site/static/css/main.c94002a7.css",
-    "main.js": "/uascc-site/static/js/main.dea498d0.js",
+    "main.css": "/uascc-site/static/css/main.84813251.css",
+    "main.js": "/uascc-site/static/js/main.fffc4149.js",
     "static/js/787.9317e4e9.chunk.js": "/uascc-site/static/js/787.9317e4e9.chunk.js",
+    "static/media/Eric.jpg": "/uascc-site/static/media/Eric.085b532b26d0ef899f8a.jpg",
     "static/media/Temp.png": "/uascc-site/static/media/Temp.d805f3b2a9ea2fc3f492.png",
-    "static/media/Bakbak.jpg": "/uascc-site/static/media/Bakbak.b18db91783b10b28076b.jpg",
+    "static/media/Kareem.png": "/uascc-site/static/media/Kareem.253dbff5f35f4c26e416.png",
+    "static/media/El.jpg": "/uascc-site/static/media/El.b5b20239fcde4ebd911c.jpg",
     "static/media/Dhiraj.jpg": "/uascc-site/static/media/Dhiraj.69c4be78a93f00c73aab.jpg",
     "static/media/RJ.jpg": "/uascc-site/static/media/RJ.b123de08e3c3ae26216b.jpg",
-    "static/media/Optimus.jpg": "/uascc-site/static/media/Optimus.f7e13aae598103cb0c27.jpg",
     "index.html": "/uascc-site/index.html",
-    "main.c94002a7.css.map": "/uascc-site/static/css/main.c94002a7.css.map",
-    "main.dea498d0.js.map": "/uascc-site/static/js/main.dea498d0.js.map",
+    "main.84813251.css.map": "/uascc-site/static/css/main.84813251.css.map",
+    "main.fffc4149.js.map": "/uascc-site/static/js/main.fffc4149.js.map",
     "787.9317e4e9.chunk.js.map": "/uascc-site/static/js/787.9317e4e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c94002a7.css",
-    "static/js/main.dea498d0.js"
+    "static/css/main.84813251.css",
+    "static/js/main.fffc4149.js"
   ]
 }
