@@ -3,11 +3,11 @@ import Grid from '@mui/material/Grid';
 
 import Member from '../../components/members/Member';
 
-import RJ from './styles/rj.jpg'
-import dhiraj from './styles/dhiraj.jpg'
-import El from './styles/el.jpg'
-import Eric from './styles/eric.jpg'
-import Kareem from './styles/kareem.jpg'
+import RJ from './styles/RJ.jpg'
+import dhiraj from './styles/Dhiraj.jpg'
+import El from './styles/El.jpg'
+import Eric from './styles/Eric.jpg'
+import Kareem from './styles/Kareem.jpg'
 
 
 const infoDict = {

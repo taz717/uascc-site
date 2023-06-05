@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Typography from '@mui/material/Typography';
-import { Box, Container } from '@mui/material';
+import { Box } from '@mui/material';
 
 const mission = "The University of Alberta Solar Car Club consists of a SMALL TEAM, who have a BIG DREAM to THINK GREEN when it comes to researching ways to diversify energy in the world of transportation. Our mission is to design and construct a vehicle, fully powered by solar energy, to compete and race in international competitions. The bigger journey is the road to sustainability, where we aim to bring people of different knowledge backgrounds together to increase awareness and innovation of sustainable energy solutions. Our team is a place where everyone is welcome, no matter what their level  of expertise, and is a place where people can leave with more knowledge than they came with in the fields of science, engineering, corporate relations, and team building. We hope that what starts as a project car for races and competitions can more importantly contribute to future solutions in sustainable transportation for the general public."
 
