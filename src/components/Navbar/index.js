@@ -33,14 +33,14 @@ function ResponsiveAppBar() {
 
           {/* DESKTOP VIEW START */}
 
-          <Link href="/" color="inherit">
+          <Link href="/#/" color="inherit">
             <DirectionsCar sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           </Link>
           <Typography
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            href="#/"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -113,7 +113,7 @@ function ResponsiveAppBar() {
             variant="h5"
             noWrap
             component="a"
-            href=""
+            href="#/"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },

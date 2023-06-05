@@ -13,10 +13,11 @@ function Member({ member }) {
                 variant="outlined"
                 component="img"
                 sx={{
-                    height: 140, objectFit: 'contain', marginTop: '10px'
+                    height: 140, objectFit: 'contain', marginTop: '10px', aspectRatio: '2/3'
                 }}
                 image={member[1]}
                 title={member[0]}
+                loading="lazy"
             />
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
